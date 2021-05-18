@@ -4,11 +4,11 @@ import {
   Balance,
   DefaultCredentials,
   useWorkspace,
-} from "console-components-test-1";
+} from "@tru_id/console-components";
 import { signOut } from "next-auth/client";
 import withAuthenticationRequired from "../src/withAuthenticationRequired";
 
-function Home() {
+function Console() {
   const { loading, workspace, error } = useWorkspace();
   if (loading) {
     return <p>Loading</p>;
@@ -35,4 +35,4 @@ function Home() {
   );
 }
 
-export default withAuthenticationRequired(Home);
+export default withAuthenticationRequired(Console);

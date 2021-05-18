@@ -841,6 +841,14 @@
   resolved "https://registry.yarnpkg.com/@sqltools/formatter/-/formatter-1.2.3.tgz#1185726610acc37317ddab11c3c7f9066966bd20"
   integrity sha512-O3uyB/JbkAEMZaP3YqyHH7TMnex7tWyCbCI4EfJdOCoN6HIhqdJBWTM6aCCiWQ/5f5wxjgU735QAIpJbjDvmzg==
 
+"@tru_id/console-components@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@tru_id/console-components/-/console-components-0.1.1.tgz#bdae8e6434c4ba3cf73c12a4b0ed09a85cbbc755"
+  integrity sha512-sA6ZWyV3PRLLVPoWYy8VMZ/1eDYgbdWcjzDIzd5MyvcMZbD58WIuPVBZH9uiAKBiERJLcfj7ut5DgqjnAEOJ1A==
+  dependencies:
+    axios "^0.21.1"
+    swr "^0.5.6"
+
 "@types/lodash.mergewith@4.6.6":
   version "4.6.6"
   resolved "https://registry.yarnpkg.com/@types/lodash.mergewith/-/lodash.mergewith-4.6.6.tgz#c4698f5b214a433ff35cb2c75ee6ec7f99d79f10"
@@ -1345,14 +1353,6 @@ console-browserify@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/console-browserify/-/console-browserify-1.2.0.tgz#67063cef57ceb6cf4993a2ab3a55840ae8c49336"
   integrity sha512-ZMkYO/LkF17QvCPqM0gxw8yUzigAOZOSWSHg91FH6orS7vcEj5dVZTidN2fQ14yBSdg97RqhSNwLUXInd52OTA==
-
-console-components-test-1@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/console-components-test-1/-/console-components-test-1-0.1.8.tgz#ed20ae2fb42b69b7ab4a920cbcd9e0495f75eb47"
-  integrity sha512-EKt83OtJZdn51QHzPZbBAEmNTU3s+dKOW7vgNtzVE9Eufo7TB3tzVeCqgSzzT7ZQFRbKVZMVOkyzrjYuqctusw==
-  dependencies:
-    axios "^0.21.1"
-    swr "^0.5.6"
 
 constants-browserify@1.0.0, constants-browserify@^1.0.0:
   version "1.0.0"

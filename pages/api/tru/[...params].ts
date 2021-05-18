@@ -20,11 +20,7 @@ async function TruAPIHandler(req: NextApiRequest, res: NextApiResponse) {
     signingKey: process.env.NEXTAUTH_SIGNIN_KEY,
     encryptionKey: process.env.NEXTAUTH_ENCRYPTION_KEY,
   });
-  if (!token) {
-    res.status(401).end();
-    return;
-  }
-  if (!token.accessToken) {
+  if (!token || !token.accessToken) {
     res.status(401).end();
     return;
   }

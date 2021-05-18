@@ -1,5 +1,5 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import { DefaultCredentialsProvider, theme } from "console-components-test-1";
+import { DefaultCredentialsProvider, theme } from "@tru_id/console-components";
 import { Provider as AuthProvider, useSession } from "next-auth/client";
 import type { AppProps } from "next/app";
 import { ReactElement } from "react";
