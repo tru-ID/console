@@ -11,10 +11,10 @@ import withAuthenticationRequired from "../src/withAuthenticationRequired";
 function Console() {
   const { loading, workspace, error } = useWorkspace();
   if (loading) {
-    return <p>Loading</p>;
+    return <Box p={6}>Loading workspace</Box>;
   }
   if (error) {
-    return <p>Error</p>;
+    return <Box p={6}>Error fetching workspace</Box>;
   }
   return (
     <Box>

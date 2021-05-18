@@ -28,7 +28,7 @@ const withAuthenticationRequired = <P extends object>(
       );
     }
 
-    if (session && session.dataResidency) {
+    if (session) {
       return <Component {...props} />;
     }
 

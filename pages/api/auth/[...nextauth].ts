@@ -100,7 +100,6 @@ export default NextAuth({
       }
       if (token) {
         // only include if the user is logged in
-        // so the token is defined
         updatedSession.clientId = clientId;
         updatedSession.clientSecret = clientSecret;
       }
@@ -119,7 +118,6 @@ export default NextAuth({
           tokenWithCredentials.expiresAt =
             Date.now() + account.expires_in * 1000;
         }
-        // grab data_residency and idp_provider from the id_token
         tokenWithCredentials.dataResidency = String(
           profile.dataResidency
         ).toUpperCase() as DataResidency;
