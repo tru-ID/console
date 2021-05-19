@@ -885,10 +885,10 @@
   resolved "https://registry.yarnpkg.com/@sqltools/formatter/-/formatter-1.2.3.tgz#1185726610acc37317ddab11c3c7f9066966bd20"
   integrity sha512-O3uyB/JbkAEMZaP3YqyHH7TMnex7tWyCbCI4EfJdOCoN6HIhqdJBWTM6aCCiWQ/5f5wxjgU735QAIpJbjDvmzg==
 
-"@tru_id/console-components@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@tru_id/console-components/-/console-components-0.1.6.tgz#4fd61b627bfbbddd89d726ce620a869a5e76c85a"
-  integrity sha512-WypDiMal7tjrSiV1klDBvOVKwOULGoZDXXFXSrSpxjXJ3+DuODDTkmrk7oV+sUNsKTrSIrOrgVxKal2Iuwm5eQ==
+"@tru_id/console-components@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@tru_id/console-components/-/console-components-0.1.7.tgz#faa17040ecfabce2e43755ca2be6a14253c2effc"
+  integrity sha512-q37Eo/3a9E1rVve5/zRLTEK/3QeTRoeisMWWmXinxgBfFUkz5/6ft2MT/OOw3LwkNZhKmysnA/DSWr5UCS/M+Q==
   dependencies:
     axios "^0.21.1"
     swr "^0.5.6"

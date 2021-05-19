@@ -14,7 +14,7 @@
     "@chakra-ui/react": "^1.6.2",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "@tru_id/console-components": "^0.1.6",
+    "@tru_id/console-components": "^0.1.7",
     "axios": "^0.21.1",
     "framer-motion": "^4",
     "next": "10.2.0",
