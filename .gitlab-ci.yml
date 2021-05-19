@@ -1,0 +1,18 @@
+stages:
+  - lint_test
+
+before_script:
+  - yarn install --frozen-lockfile --cache-folder .yarn
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+    - .yarn/
+
+lint_test:
+  stage: lint_test
+  image: node:latest
+  script:
+    - yarn lint
+    - yarn check-types

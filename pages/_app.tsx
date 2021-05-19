@@ -1,17 +1,17 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import { DefaultCredentialsProvider, theme } from "@tru_id/console-components";
-import { Provider as AuthProvider, useSession } from "next-auth/client";
-import type { AppProps } from "next/app";
-import { ReactElement } from "react";
+import { ChakraProvider } from '@chakra-ui/react'
+import { DefaultCredentialsProvider, theme } from '@tru_id/console-components'
+import { Provider as AuthProvider, useSession } from 'next-auth/client'
+import { AppProps } from 'next/app'
+import * as React from 'react'
 
 interface AppWithCredentialsProps {
-  children: ReactElement;
+  children: React.ReactElement
 }
 
 function AppWithCredentials({ children }: AppWithCredentialsProps) {
-  const [session] = useSession();
+  const [session] = useSession()
   if (session) {
-    const { clientId, clientSecret, dataResidency } = session;
+    const { clientId, clientSecret, dataResidency } = session
     return (
       <DefaultCredentialsProvider
         defaultClientId={clientId}
@@ -20,9 +20,9 @@ function AppWithCredentials({ children }: AppWithCredentialsProps) {
       >
         {children}
       </DefaultCredentialsProvider>
-    );
+    )
   }
-  return <DefaultCredentialsProvider>{children}</DefaultCredentialsProvider>;
+  return <DefaultCredentialsProvider>{children}</DefaultCredentialsProvider>
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </AppWithCredentials>
       </AuthProvider>
     </ChakraProvider>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp

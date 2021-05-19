@@ -1,1 +1,1 @@
-export type DataResidency = "EU" | "GB";
+export type DataResidency = 'EU' | 'GB'

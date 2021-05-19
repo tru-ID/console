@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "airbnb-typescript",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "ignorePatterns": ["**/*.js"],
+  "rules": {
+    "react/jsx-props-no-spreading": "warn",
+    "@typescript-eslint/indent": 0,
+    "@typescript-eslint/naming-convention": "warn",
+    "react/no-array-index-key": "warn",
+    "react/require-default-props": 0,
+    "react/no-unescaped-entities": "warn",
+    "no-underscore-dangle": "warn",
+    "import/no-extraneous-dependencies": "warn"
+  }
+}

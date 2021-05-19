@@ -1,25 +1,25 @@
-import { Button } from "@chakra-ui/button";
-import { Box, Flex } from "@chakra-ui/layout";
+import { Box, Button, Flex } from '@chakra-ui/react'
 import {
   Balance,
   DefaultCredentials,
   useWorkspace,
-} from "@tru_id/console-components";
-import { signOut } from "next-auth/client";
-import withAuthenticationRequired from "../src/withAuthenticationRequired";
+} from '@tru_id/console-components'
+import { signOut } from 'next-auth/client'
+import * as React from 'react'
+import withAuthenticationRequired from '../src/withAuthenticationRequired'
 
 function Console() {
-  const { loading, workspace, error } = useWorkspace();
+  const { loading, workspace, error } = useWorkspace()
   if (loading) {
-    return <Box p={6}>Loading workspace</Box>;
+    return <Box p={6}>Loading workspace</Box>
   }
   if (error) {
-    return <Box p={6}>Error fetching workspace</Box>;
+    return <Box p={6}>Error fetching workspace</Box>
   }
   return (
     <Box>
       <Flex p={4} bg="blue.800" justifyContent="flex-end">
-        <Button size="sm" onClick={() => signOut({ callbackUrl: "/login" })}>
+        <Button size="sm" onClick={() => signOut({ callbackUrl: '/login' })}>
           Logout
         </Button>
       </Flex>
@@ -32,7 +32,7 @@ function Console() {
         </Box>
       </Flex>
     </Box>
-  );
+  )
 }
 
-export default withAuthenticationRequired(Console);
+export default withAuthenticationRequired(Console)
