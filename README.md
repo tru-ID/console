@@ -41,4 +41,4 @@ You can build the assets, including the server lambdas with `yarn build` and ser
 
 ### Code of Conduct
 
-https://developer.tru.qa/code-of-conduct
+https://developer.tru.id/code-of-conduct
