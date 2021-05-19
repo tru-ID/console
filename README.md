@@ -38,3 +38,7 @@ If you want to self host the console on your platform you need to build it first
 Bear in mind this console has both static assets and lambda functions that require a server.
 
 You can build the assets, including the server lambdas with `yarn build` and serve them with the integrated node server `yarn start`
+
+### Code of Conduct
+
+https://developer.tru.qa/code-of-conduct
